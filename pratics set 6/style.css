@@ -1,0 +1,298 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+
+:root{
+    --color-1: #ffffff;
+  }
+  body{
+      line-height: 1.5;
+      /* font-family: sans-serif; */
+      /* background-color: #c6cde0; */
+  }
+  *{
+      box-sizing: border-box;
+      margin:0;
+      padding:0;
+  }
+  a{
+      text-decoration: none;
+  }
+  ul{
+      list-style: none;
+  }
+  .container{
+      max-width: 1170px;
+      margin: auto;
+  }
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .align-items-center {
+    align-items: center;
+    padding: 9px 3px;
+    
+}
+  .justify-content-between{
+      justify-content: space-between;
+  }
+  /*header*/
+  .header{
+      background-color: var(--color-1);
+      position: relative;
+  }
+  .header .logo,
+  .header .nav{
+      padding:0 15px;
+  }
+  .header .logo img{
+      height: 40px;
+      margin: 8px 4px;
+      padding: 4px 9px;
+  }
+  .header .nav ul li{
+      display: inline-block;
+      margin-left: 12px;
+      
+  }
+  .header .nav ul li a{
+      display: block;
+      font-size: 16px;
+      text-align: center;
+      padding: 10px 0;
+      margin: 12px 0px;
+      color: rgba(0, 0, 0, 0.7);
+      text-transform: capitalize;
+      transition: all 0.5s ease;
+  }
+  .header .nav ul li a:hover,
+  .header .nav ul li a.active{
+      color: #5e5e5e;
+  }
+  .header #nav-check{
+      position: absolute;
+      opacity:0;
+      pointer-events: none;
+  }
+  .nav-toggler{
+      height: 34px;
+      width: 44px;
+      background-color: #000000;
+      border-radius: 4px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+  }
+  .nav-toggler span{
+      display: block;
+      height: 2px;
+      width: 20px;
+      background-color: var(--color-1);
+      position: relative;
+  }
+  .nav-toggler span::before,
+  .nav-toggler span::after{
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: var(--color-1);
+     left:0;
+  }
+  .nav-toggler span::before{
+      top: -6px;
+  }
+  .nav-toggler span::after{
+      top: 6px;
+  }
+
+
+/* home container */
+.container-fluid {
+    position: relative;
+}
+
+.container-fluid::before {
+    content: "";
+    background: url('./background/background.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 545px;
+    width: 100%;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 545px;
+    border-left: 1px solid red;
+    margin-left: 54px;
+}
+
+.p-secondery {
+    padding-left: 45px;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: rgb(65, 62, 62);
+    font-family: 'Hind Madurai', sans-serif;
+    border-left: 2px solid red;
+}
+
+
+/* first CARD IN CSS */
+
+.section-card-2{
+    /* display: flex; */
+    position: relative; 
+    margin: -5px;
+}
+.second-card{
+    display: flex;
+}
+.card-2 img{
+    width: 100%;
+}
+p{
+    padding: 1px 12px;
+    border-left: 3px solid rgb(245, 245, 245);
+}
+h2{
+    position: absolute;
+    top: 4px;
+    border-left: 1px solid white;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 25px;
+    margin: -4px;
+    padding-left: 25px;
+    font-weight: bold;
+    margin-left: 59px;
+   
+}
+p{
+    font-size: 18px;
+    
+}
+.center-1{
+    /* position: absolute; */
+    bottom: 0px;
+    padding-bottom: 60px;
+    border-left: 1px solid white;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* padding-left: 25px; */
+    font-weight: bold;
+    margin-left: 59px;
+ 
+    
+}
+
+/* alicon logo set up */
+.section-footer{
+    display: block;
+    width: 95%;
+    margin: auto;
+}
+
+.section-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.alicon-logo img{
+    height: 40px;
+    margin: 5px 4px;
+}
+.future-the-casting{
+    font-size: 19px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(49, 48, 48);
+}
+hr.new2 {
+    border-top: 1px solid red;
+  }
+
+/* footer in css */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+}
+.heading{
+    padding: 12px 3px;
+    margin: 7px 8px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: rgb(49, 48, 48);
+}
+
+
+.para{
+    padding: 12px 1px;
+    margin: 7px 0px;
+    /* width: 250px; */
+    font-size: 15px;
+    color: rgb(49, 48, 48);
+
+    
+}
+.h-pramery ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.para .h-secondery{
+    padding: 3px 4px;
+    margin: 1px 3px;
+    color: rgb(109, 109, 109);
+}
+.h-pramery ul li {
+    /* text-align: center; */
+    margin: 1px 3px;
+    padding: 2px 4px;
+    color: rgb(90, 90, 90);
+}
+.h-pramery  ul li a{
+    margin: 0px 3px;
+    font-size: 13px;
+    text-decoration: underline;
+    color: rgb(90, 90, 90);
+}
+.h-pramery ul li a:hover{
+    color: rgb(226, 35, 35);
+    text-decoration: none;
+}
+
+.head li {
+    padding: 12px 3px;
+    margin: 7px 8px;
+    font-size: 15px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: rgb(49, 48, 48);
+}
+.head a{
+    color: rgb(90, 90, 90);
+    text-decoration: underline;
+
+}
+.head li a:hover{
+    color: rgb(226, 35, 35);
+    text-decoration: none;
+}
